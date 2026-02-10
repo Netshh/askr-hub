@@ -1,6 +1,6 @@
 -- ASKR HUB LOADER
 local success, content = pcall(function()
-    return game:HttpGet("https://raw.githubusercontent.com/Netshh/askr-hub/main/source.lua")
+    return game:HttpGet("https://raw.githubusercontent.com/Netshh/askr-hub/main/source.lua?v=" .. tostring(math.random(1, 100000)))
 end)
 
 if not success then
